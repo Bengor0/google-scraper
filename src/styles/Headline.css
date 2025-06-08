@@ -1,0 +1,32 @@
+.headline.move {
+  animation-name: colorAnimation;
+  animation-delay: calc(var(--index) * 0.07s);
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.25s, 0, 0, 0.25s);
+
+  -wekit-animation-name: colorAnimation;
+  -wekit-animation-delay: calc(var(--index) * 0.07s);
+  -wekit-animation-duration: 1s;
+  -wekit-animation-iteration-count: 1;
+  -wekit-animation-timing-function: cubic-bezier(0.5s, 0, 0, 0.5s);
+}
+
+.headline {
+  font-size: 70px;
+  color: #ffffff;
+  cursor: default;
+  user-select: none;
+}
+
+@keyframes colorAnimation {
+  50% {
+    color: red;
+  }
+}
+
+@-webkit-keyframes colorAnimation {
+  50% {
+    color: red;
+  }
+}
