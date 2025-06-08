@@ -3,7 +3,6 @@ import Headline from "./components/Headline";
 import SearchGoogle from "./components/SearchGoogle";
 import DownloadListOptions from "./components/DownloadListOptions";
 import SearchList from "./components/SearchList";
-import "./App.css";
 
 export default function App() {
   const [previousQuery, setPreviousQuery] = useState("");
